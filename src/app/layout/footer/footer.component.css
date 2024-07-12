@@ -1,0 +1,14 @@
+footer{
+    text-align: center;
+    padding: 20px 0;
+    height: 80px;
+    background-color: gray;
+    color: white;
+    font-weight: 550;
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+}
+.siteTitle{
+    margin-bottom: 20px;
+}

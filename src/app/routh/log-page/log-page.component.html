@@ -1,0 +1,9 @@
+<app-basic-layout>
+    <div class="align">
+        @if(!active){
+            <app-log [title]="loginTitle" [buttonTask]="registerTitle" [submitTask]="loginTitle" [reverseMessage]="registerMessage" [reverseDescription]="registerDescription" (isActiveChange)="onIsActiveChangeLogin($event)" [(isActive)]="active"></app-log>
+        }@else {
+            <app-log [title]="registerTitle" [buttonTask]="loginTitle" [submitTask]="registerTitle" [reverseMessage]="loginMessage" [reverseDescription]="loginDescription" (isActiveChange)="onIsActiveChangeRegister($event)" [(isActive)]="active"></app-log>
+        }
+    </div>
+</app-basic-layout>

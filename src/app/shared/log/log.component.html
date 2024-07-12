@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="log-procedur">
+        <h2>{{title}}</h2>
+            <form (submit)="onSubmit()" [formGroup]="logForm">
+                <label for="email">Email</label><br>
+                <input type="text" id="email" formControlName="email" placeholder="example@gmail.com"><br>
+                <label for="password">Password</label><br>
+                <input type="text" id="password" formControlName="password" placeholder="******"><br>
+                <div class="form-bottom">
+                    <select id="role" formControlName="role">
+                        <option value="" disabled>Select Role</option>
+                        <option value="GUEST">Guest</option>
+                        <option value="MANAGER">Manager</option>
+                    </select>
+                <button type="submit">{{submitTask}}</button> 
+                </div>               
+            </form>       
+    </div>
+    <div class="reverse-procedur">
+        <h2>{{reverseMessage}}</h2>
+        <div class="reverse-content">
+        <p>{{reverseDescription}}</p><br>
+        <button id="reverseButton" (click)="isActived()">{{buttonTask}}</button>
+        </div>
+    </div>
+</div>

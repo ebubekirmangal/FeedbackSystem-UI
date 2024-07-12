@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    border: 2px solid black;
+    width: max-content;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+h2{
+    text-align: center;
+    margin-top: 0;
+}
+.log-procedur{
+    padding: 20px;
+    width: 240px;
+    border-right: 2px solid black;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 20px;
+}
+.log-procedur,.reverse-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reverse-procedur{
+    padding: 20px;
+    width:180px;
+}
+.reverse-content{
+    margin-top: 25px;
+}
+button{
+    padding: 7px 11px;
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 80px;
+}
+button:hover{
+    transform: scale(1.02);
+}
+input,select{
+    margin-bottom: 8px;
+    margin-top: 4px;
+    outline: 0;
+    border: 0;
+    background-color: rgb(237, 234, 234);
+    padding: 8px 10px;
+    border-radius: 15px;
+    text-indent: 5px;
+    
+}
+input{
+    width:200px;
+}
+select{
+    width: 120px;
+}
+form label{
+    padding-left: 8px;
+}
+p{
+    text-align: center;
+    font-size: 14px;
+}
+.form-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+select{
+    margin: 0;
+}
