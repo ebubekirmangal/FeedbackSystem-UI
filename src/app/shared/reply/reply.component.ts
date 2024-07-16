@@ -4,6 +4,7 @@ import { GetReplyByFeedbackId } from '../../features/reply/models/getByFeedbackI
 import { ReplyService } from '../../features/reply/service/reply.service';
 import { ListFeedback } from '../../features/feedback/models/listFeedbackByDate';
 import { CommonModule } from '@angular/common';
+import { UserService } from '../../features/user/service/user.service';
 
 @Component({
   selector: 'app-reply',
@@ -17,14 +18,17 @@ export class ReplyComponent implements OnInit {
   isActiveMap: { [key: number]: boolean } = {}; 
   type: string = "Reply";
   replies: { [key: number]: GetReplyByFeedbackId } = {}; 
+  role:string;
+
   @Input() feedbackId:number;
 
-  constructor(private replyService:ReplyService){
+  constructor(private replyService:ReplyService,private userService:UserService){
 
   }
   ngOnInit(): void {
     this.isActiveMap[this.feedbackId] = false;
     this.loadReplies();
+    this.role=this.userService.getRole();
   }
   onClick(feedbackId: number) {
     this.isActiveMap[feedbackId] = !this.isActiveMap[feedbackId];

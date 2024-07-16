@@ -1,9 +1,15 @@
 @if(!replies[feedbackId]?.transactionalDone) {
-    <div class="reply-container-zero">  
+  <div class="reply-container-zero"> 
+  @if(role==="MANAGER"){
+     
     <div class="status">
       Geri bildirime cevap verilmedi
     </div>
       <button (click)="onClick(feedbackId)">Cevap Ver</button>
+    
+  }@else {
+    Henüz yanıt gelmedi.
+  }
     </div>
   }@if(replies[feedbackId]?.transactionalDone){
     <div class="reply-container-one">
