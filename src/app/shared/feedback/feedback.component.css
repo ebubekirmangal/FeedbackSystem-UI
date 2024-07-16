@@ -23,6 +23,7 @@
 h3{
     border-right: 1px solid #fff;
     padding: 10px 5px 10px 0 ;
+    max-width:130px ;
 }
 .textarea{
     width: 252px;
@@ -35,5 +36,6 @@ h3{
     padding: 5px;
     background-color: white;
     color: black;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }

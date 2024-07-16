@@ -1,0 +1,19 @@
+@if(!replies[feedbackId]?.transactionalDone) {
+    <div class="reply-container-zero">  
+    <div class="status">
+      Geri bildirime cevap verilmedi
+    </div>
+      <button (click)="onClick(feedbackId)">Cevap Ver</button>
+    </div>
+  }@if(replies[feedbackId]?.transactionalDone){
+    <div class="reply-container-one">
+      <div class="reply-title">{{replies[feedbackId]?.title}}</div>
+      <hr>
+    <div class="reply-content">{{replies[feedbackId]?.content}}</div>
+    </div> 
+  }
+  <div class="display" [ngClass]="{'active': isActiveMap[feedbackId]}">
+    <app-customer-feedback [type]="type" [feedbackId] ="feedbackId"></app-customer-feedback>
+  </div> 
+    
+

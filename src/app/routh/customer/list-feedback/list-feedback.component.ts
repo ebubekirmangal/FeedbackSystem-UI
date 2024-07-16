@@ -4,10 +4,11 @@ import { FeedbackService } from '../../../features/feedback/service/feedback.ser
 import { ListFeedback } from '../../../features/feedback/models/listFeedbackByDate';
 import { FeedbackComponent } from "../../../shared/feedback/feedback.component";
 import { DatePipe } from '@angular/common';
+import { ReplyComponent } from "../../../shared/reply/reply.component";
 @Component({
   selector: 'app-list-feedback',
   standalone: true,
-  imports: [BasicLayoutComponent, FeedbackComponent,DatePipe],
+  imports: [BasicLayoutComponent, FeedbackComponent, DatePipe, ReplyComponent],
   templateUrl: './list-feedback.component.html',
   styleUrl: './list-feedback.component.css'
 })
