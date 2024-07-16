@@ -1,0 +1,33 @@
+<div class="main">
+  @for (feedback of feedbacks; track $index;) {
+    <div class="container">
+      <app-feedback 
+      [title]="feedback.title"
+      [email]="feedback.email"
+      [content]="feedback.content"
+      [sentTime]="feedback.sentTime | date:'dd/MM/yyyy'"
+    ></app-feedback>
+    <div class="reply-container">
+      @if(replies[feedback.id].transactionalDone) {
+        <div class="status">
+          Geri bildirime cevap verilmedi
+        </div>
+          <button (click)="onClick()">Cevap Ver</button>
+      }@else{
+        {{replies[feedback.id]}}
+        
+      }
+    </div>
+    </div>
+    <div class="display" [ngClass]="{'active': isActive}">
+      <app-customer-feedback [type]="type" [feedbackId] ="feedback.id"></app-customer-feedback>
+    </div> 
+     }       
+</div>
+
+
+    
+    
+
+ 
+ 

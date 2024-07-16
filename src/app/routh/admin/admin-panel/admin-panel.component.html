@@ -1,0 +1,26 @@
+<div class="container">
+    <nav>
+        <ul>
+            <a href="#"><li>Panel 1</li></a>
+            <a href="#"><li>Panel 2</li></a>
+            <a href="#"><li>Panel 3</li></a>
+            <a routerLink="/admin/feedback-reply"><li>Feedbacks</li></a>
+        </ul>
+    </nav>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="animation">
+        <div class="border">
+            <div class="close">
+                X
+            </div>
+        </div>
+        <div class="selection">
+            <a routerLink="/home" class="color"><div class="home" >Ziyaretçi Sayfası</div></a>
+            <hr>
+            <div class="logout" (click)="logout()">Çıkış Yap</div>
+        </div>
+    </div>
+    
+</div>

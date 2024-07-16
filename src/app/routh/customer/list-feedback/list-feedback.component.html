@@ -1,0 +1,12 @@
+<app-basic-layout>
+   <h2>Feedback List</h2> 
+   @for (feedback of feedbacks; track $index) {
+    <app-feedback 
+    [title]="feedback.title"
+    [email]="feedback.email"
+    [content]="feedback.content"
+    [sentTime]="feedback.sentTime | date:'dd/MM/yyyy'"
+  ></app-feedback>
+   }
+</app-basic-layout>
+

@@ -8,8 +8,11 @@
         <div class="navigation">
           <ul>
             <a routerLink="/home"><li>Home</li></a>
-            <a href="/feedbacks"><li>Feedback</li></a>
-            <a href="/logPage"><li>Login</li></a>
+            <a href="/create-feedback"><li>Feedback</li></a>
+            @if(isAdmin){
+               <a href="/admin"><li>Admin Paneli</li></a> 
+            }
+            <a href="{{logPage}}"><li>{{login}}</li></a>
         </ul>  
         </div> 
     </div>   

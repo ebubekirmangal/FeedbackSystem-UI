@@ -4,9 +4,10 @@ nav,.horizontal-align,.siteInfo,ul{
 }
 nav{
     justify-content: center;
-    background-color: rgb(230, 227, 227);
+    background-color: #017609;
     width: 100vw;
     padding: 5px 15px;
+    margin-top: 10px;
 }
 .horizontal-align{
     width: 90vw;
@@ -23,6 +24,7 @@ nav{
 .siteTitle{
     text-transform: uppercase;
     font-weight: 550;
+    color: white;
 }
 ul{
     list-style: none;
@@ -31,17 +33,15 @@ ul{
 }
 ul a{
     text-decoration: none;
-    color: white;
+    color: #046d0b;
+    font-weight: 550;
 }
 ul li{
     padding: 8px 10px;
-    border: 2px solid grey;
-    width: 60px;
+    border: 2px solid white;
+    min-width: 60px;
     text-align: center;
     border-radius: 20px;
-    background-color: rgb(177, 175, 175);
+    background-color: white;
 }
-ul li:hover{
-    background-color: gray;
-    border: 2px solid white;
-}
+

@@ -5,7 +5,7 @@
                 <label for="email">Email</label><br>
                 <input type="text" id="email" formControlName="email" placeholder="example@gmail.com"><br>
                 <label for="password">Password</label><br>
-                <input type="text" id="password" formControlName="password" placeholder="******"><br>
+                <input type="password" id="password" formControlName="password" placeholder="******"><br>
                 <div class="form-bottom">
                     <select id="role" formControlName="role">
                         <option value="" disabled>Select Role</option>
@@ -23,4 +23,6 @@
         <button id="reverseButton" (click)="isActived()">{{buttonTask}}</button>
         </div>
     </div>
+    <app-time-display  [isSubmit]="submit" [message]="message" [color]="color"></app-time-display>
 </div>
+

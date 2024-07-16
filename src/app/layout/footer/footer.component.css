@@ -2,12 +2,15 @@ footer{
     text-align: center;
     padding: 20px 0;
     height: 80px;
-    background-color: gray;
+    background-color: #032205;
     color: white;
     font-weight: 550;
-    position: absolute;
-    bottom: 0px;
     width: 100vw;
+    margin: 0 auto;
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
 }
 .siteTitle{
     margin-bottom: 20px;

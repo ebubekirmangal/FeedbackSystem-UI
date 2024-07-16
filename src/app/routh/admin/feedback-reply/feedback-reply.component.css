@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.reply-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(246, 243, 243);
+    box-shadow: 0px 0px 5px #046d0b;
+    padding: 10px;
+    border-radius:15px;
+    color: #046d0b;
+}
+.main{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+button{
+    color: #046d0b;
+    padding: 6px 10px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #046d0b;
+    width: 90px;
+}
+.display{
+    display: none;
+}
+.display.active{
+    display: block;
+}
